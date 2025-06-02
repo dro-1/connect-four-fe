@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Four</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href=".//favicon.ico" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen relative flex justify-center items-center bg-black"
+    >
+      <div class="absolute inset-0 opacity-10 flex justify-center items-center">
+        <img src="./connect-four.png" alt="" />
+      </div>
+      <div class="relative z-10 text-center mx-auto w-[90%] max-w-[1000px]">
+        <h1 class="text-white text-6xl">Connect Four</h1>
+        <p class="text-white text-[20px]">
+          Connect Four 🎯 is a 2-player game where you and a friend (or frenemy
+          👀) take turns dropping colored discs 🎨 into a grid. The goal? Be the
+          first to line up 4 in a row - horizontally, vertically, or diagonally
+          - before your opponent does.
+          <span class="text-white hidden lg:inline">
+            Sounds simple, but trust... it gets intense real quick 😤🔥. One
+            wrong move and it's game over 💀. Easy to play, hard to master - and
+            yes, winning totally counts as a personality trait 🏆😎.
+          </span>
+        </p>
+        <em class="text-2xl mt-5 block text-white"
+          >Wanna play? Create a game by entering the emails of the 2
+          players.</em
+        >
+        <form class="mt-4 max-w-[800px] mx-auto">
+          <div class="md:flex md:justify-between md:items-center">
+            <input
+              type="email"
+              placeholder="Player 1 Email"
+              class="bg-white w-full rounded-md px-1 py-2 text-center text-black mb-2 md:mb-0 md:w-[48%] player1"
+            />
+            <input
+              type="email"
+              placeholder="Player 2 Email"
+              class="bg-white w-full rounded-md px-1 py-2 text-center text-black md:w-[48%] player2"
+            />
+          </div>
+
+          <button
+            class="w-full rounded-md px-1 py-2 text-center bg-blue text-white mt-4"
+          >
+            Start Game!
+          </button>
+          <em class="error text-2xl text-red block mt-2"></em>
+          <em class="success text-2xl text-green-500 block mt-2"></em>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
